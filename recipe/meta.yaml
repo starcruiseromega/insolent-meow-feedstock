@@ -1,0 +1,19 @@
+package:
+  name: insolent-meow
+  version: 0.0.1
+
+build:
+  noarch_python: True
+  number: 0
+
+source:
+  git_url: https://github.com/starcruiseromega/insolent-meow.git
+  git_rev: 4f1416ae85c94b0836f8921141fa4fc35d26ba44
+
+requirements:
+  run:
+    # Necessary for noarch_python packages. See https://github.com/conda/conda-build/issues/542
+    - python
+
+about:
+  summary: Test package to demonstrate an issue
